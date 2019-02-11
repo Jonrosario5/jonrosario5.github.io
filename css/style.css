@@ -1,0 +1,411 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+}
+
+body {
+  border:2px solid black;
+  background-image: url("../images/namePlate.jpg");
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+
+
+/*THE NAV BAR --------------------*/
+
+header {
+  background: black;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 51px;
+}
+
+.navHamburger-toggle {
+  position:relative;
+  top:-1000px;
+
+}
+
+.navHamburger-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navHamburger-toggle-label span,
+.navHamburger-toggle-label span::before,
+.navHamburger-toggle-label span::after {
+  display: block;
+  height: 3px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+  border:2px solid gold;
+}
+
+.navHamburger-toggle-label span::before,
+.navHamburger-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.navHamburger-toggle-label span::before {
+  bottom: 5px;
+  left: -2px;
+  border: 2px solid gold;;
+}
+
+.navHamburger-toggle-label span::after {
+  top: 5px;
+  left: -2px;
+  border: 2px solid gold;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: black;
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+  color: gold;
+}
+
+.navHamburger-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+
+
+.navHamburger-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+
+
+ul {
+  list-style-type: none;
+
+}
+
+
+/*Intro =====================*/
+
+
+
+.intro .container {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  background: blue;
+  margin-top: -16px;
+  background-image: url("../images/namePlate.jpg");
+  background-size: contain;
+  background-position:center;
+  background-repeat: no-repeat;
+
+}
+
+#photoNamePlate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 26px;
+  text-align: center;
+}
+
+.profilePic {
+  border-radius: 50%;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+#namePlate {
+  padding-bottom: 21px;
+  border-bottom: 2px solid gray;
+  text-align: center;
+  color: gold
+}
+
+#aboutHeader {
+  margin-top: 110px;
+  border-bottom:2px solid gray;
+  padding-bottom: 21px;
+  color: gold
+}
+
+.aboutSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.skillSection {
+  text-align: center;
+  color: white
+}
+
+.skillSection h2 {
+  color: gold;
+  border-bottom-style: 2px solid gray;
+}
+
+.skills {
+  list-style: none;
+  text-align: center;
+  margin-right: 43px;
+}
+/*Portfolio Section----------------*/
+
+.portfolioHeader {
+  color:gold;
+  border-bottom-style:2px solid white;
+  text-align: center;
+  margin: 50px 0;
+}
+
+
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+
+.carousel-control-next {
+  margin-left: -607px;
+}
+
+.carousel-control-prev {
+  margin-right:-570px;
+}
+
+
+
+/*Testimonies-----------------------*/
+
+#testimonies {
+  color: gold;
+  opacity: .80;
+  background: black;
+}
+
+h2 {
+  color: white;
+  border-bottom-color: black;
+}
+
+.testimoniesSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  blac
+}
+
+
+
+/*Interests Section------------------*/
+
+#interests {
+  background: orange;
+  display: flex;
+  width: 100%;
+  margin: 0px
+  padding:0px;
+}
+
+/*Contact Me Section-------------------*/
+
+#contactMe {
+  opacity: .70;
+}
+.inputs {
+  border:1px solid black;
+}
+
+.textBox {
+  border:1px solid black;
+  margin-left: 1px;
+}
+
+#formText {
+  display: flex;
+  justify-content: center;
+}
+
+#formTextArea {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+#sendForm {
+  color: gold;
+  background: black;
+  width: 50%;
+}
+
+/*Footer-------------------------------*/
+
+footer {
+  background: black;
+  width: 100%;
+}
+
+
+
+.goodBye {
+  text-align: center;
+}
+
+.goodBye a{
+  text-decoration: none;
+  color:gold;
+}
+
+
+.module {
+  background: lightblue;
+
+  margin: 0 10px 0 10px;
+}
+
+/*Grid Layout, backup to Bootstrap*/
+.column-1 { width: 8.333%; }
+.column-2 { width: 16.66%; }
+.column-3 { width: 25%; }
+.column-4 { width: 33.33%; }
+.column-5 { width: 41.66%; }
+.column-6 { width: 50%; }
+.column-7 { width: 58.33%; }
+.column-8 { width: 66.66%; }
+.column-9 { width: 75%; }
+.column-10 { width: 83.33%; }
+.column-11 { width: 91.66%; }
+.column-12 { width: 100%; }
+
+/*Media Queries*/
+
+@media only screen and (min-width: 800px)
+{
+
+  .navHamburger-toggle-label {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+
+
+  nav {
+
+    position: relative;
+    text-align: center;
+    transition: none;
+    transform: scale(1,1);
+    background: none;
+    top: initial;
+    left: initial;
+    grid-column: 2 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: gold;
+    position: absolute;
+    top: -.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
+
+  nav a:hover::before {
+    transform: scale(1,1);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #formText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   form {
+    width: 100%;
+   }
+
+   .inputs {
+  width: 100%;
+  text-align: center;
+}
+
+  .textBox{
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+
