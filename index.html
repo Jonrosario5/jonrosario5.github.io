@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Grid!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="main ">
+<!-- Nav bar container -->
+    <header>
+      <input type="checkbox" id="navHamburger-toggle" class="navHamburger-toggle">
+      <nav class="nav-bar">
+<!-- referred to this site #1 for responsive nav (see bottom) -->
+
+      <ul class="main-nav" id="js-menu">
+        <li class="nav-columns"><a href="#aboutHeader">About</a></li>
+        <li class="nav-columns"><a href="#projects">Portfolio</a></li>
+        <li class="nav-columns"><a href="#testimonies">Testimonies</a></li>
+        <li class="nav-columns"><a href="#contactMe">Contact</a></li>
+      </ul>
+      </nav>
+      <label for="navHamburger-toggle" class="navHamburger-toggle-label">
+        <span></span>
+      </label>
+    </header>
+<!-- Intro Section  -->
+    <section class="intro container" id="introHeader">
+        <!-- Name & Photos -->
+        <div class="row" id="photoNamePlate">
+          <h1 class="">Web Developer</h1>
+          <img src="images/0 copy.jpeg" class="profilePic">
+          <h3 id="namePlate">Jonathan Rosario</h3>
+        </div>
+
+        <div class="row aboutSection" >
+          <h4 id="aboutHeader">About</h4>
+          <p>Experienced professional with a history of exceling in area of focus. Looking forward to continuing building new applications and sites that assist with operational efficiency.</p>
+        </div>
+        <div class="skillSection">
+          <h2>Skills Section</h2>
+            <ul class="skills">
+              <li>HTML/CSS</li>
+              <li>Bootstrap</li>
+              <li>Ajax</li>
+              <li>jQuery</li>
+              <li>Python</li>
+            </ul>
+        </div>
+    </section>
+
+        </div>
+    </section>
+<!-- Portfolio -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <h2 class="portfolioHeader"> Portfolio</h2>
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" id="projects">
+    <div class="carousel-item active">
+      <img src="images/racergame.png" class="d-block w-100 center" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+           <h5>Rick & Morty Racing Game</h5>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/Mock Blog.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Mock Blog</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/groceryStoreSite.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+          <h5>Grocery Store Checkout w/ Dropdown Menu</h5>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- Testimonies -->
+    <section class="testimoniesSection" id="testimonies">
+      <h2>Testimonies</h2>
+      <p id="message"></p>
+      <p id="name"></p>
+      <p id="title"></p>
+    </section>
+
+<!-- Interest -->
+    <!-- <section class="container" id="interests">
+      <h2>Interests</h2>
+      <div class="row">
+
+        <img src="images/hiking.jpg" class="col-6 interestPics" id="hiking">
+        <p class="col-6" id="interest1">Hiking</p>
+        <img src="images/sports.jpg" class="col-6 interestPics" id="sports">
+        <p class="col-6" id="interest2">Sports Fan</p>
+      </div>
+      <div class="row">
+        <img src="images/teaching:debating.png" class="col-6 interestPics" id="teaching">
+        <p class="col-6" id="interest3">Teaching/Debating</p>
+        <img src="images/reading.jpeg" class="col-6 interestPics" id="reading">
+        <p class="col-6" id="interest4">Reading</p>
+      </div>
+      <div class="row">
+        <img src="images/self-improvement.png" class="col-6 interestPics" id="self-improvement">
+        <img src="" class="col-6  interestPics" id="">
+        <p class="col-6 " id="interest5">Self-Improvement</p>
+        <p class="col-6" id="interest6"></p>
+      </div>
+    </section> -->
+    <!-- Contact Section -->
+    <section id="contactMe">
+
+      <div class="row">
+      <h2 class="col-12" style="text-align: center;">Contact Me</h2>
+      </div>
+      <form>
+        <div  id="formText">
+          <input type="text" name="fullName" placeholder="Full Name" class="inputs column-3 ">
+          <input type="text" name="email" placeholder="Email" class="inputs column-3">
+          <input type="text" name="subject" placeholder="Subject" class=" inputs column-3">
+        </div>
+        <div id="formTextArea">
+          <textarea name="" rows="10" placeholder="Message" class="textBox column-9" ></textarea>
+          <input type="submit" name="formSubmit" value="Send" id="sendForm">
+      </form>
+    </section>
+
+
+    <footer>
+      <div class="goodBye">
+        <a href="https://www.linkedin.com/in/jonathan-rosario-6417b87/">LinkedIn Profile</a>
+      </div>
+    </footer>
+
+
+
+
+    <!-- **FOR BOOTSTRAP USE jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- Logic -->
+    <script src="main.js/main.js"></script>
+  </body>
+</html>
+
+<!--
+Site List
+
+Site #1 -https://codepen.io/kevinpowell/pen/jxppmr?editors=0100
+
+
+
+
+
+ -->
