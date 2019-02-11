@@ -33,3 +33,6 @@ Biggest Challenge
 The biggest challenge I faced was the testimonies, I am sure if I went Vanilla JS for the carousel it would have presented the same problem. I now know that I need to work more on my JS DOM manipulation. This project helped me figure out CSS/HTML and Bootstrap for the most part. But now I need to focus on JS and making my code DRY, as I felt I had to repeat myself too much in this project. 
 
 
+
+
+
